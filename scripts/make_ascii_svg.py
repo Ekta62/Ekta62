@@ -17,10 +17,13 @@ RAMP = " .`:-=+*cs#%@"  # bright (sparse) -> dark (dense); leading space = blank
 COLS = 100
 CHAR_W = 7.2  # px per glyph at font-size 12 monospace
 CHAR_H = 12.6
-FG = "#c9d1d9"
-BG = "#0d1117"
 ROW_WIPE = 0.55  # seconds each row takes to print
 ROW_STAGGER = 0.075  # delay between row starts
+
+THEME_CSS = (
+    ".bg{fill:#0d1117}.fg{fill:#c9d1d9}"
+    "@media (prefers-color-scheme: light){.bg{fill:#ffffff}.fg{fill:#24292f}}"
+)
 
 
 def main() -> None:
@@ -42,8 +45,11 @@ def main() -> None:
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
         f'viewBox="0 0 {w} {h}" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" '
-        f'font-size="12">',
-        f'<rect width="{w}" height="{h}" rx="8" fill="{BG}"/>',
+        f'font-size="12" role="img" aria-labelledby="t d">',
+        '<title id="t">Ekta Bhaggi — ASCII portrait</title>',
+        '<desc id="d">Self-typing ASCII-art rendering of a portrait photo.</desc>',
+        f"<style>{THEME_CSS}</style>",
+        f'<rect class="bg" width="{w}" height="{h}" rx="8"/>',
         "<defs>",
     ]
     for i in range(len(lines)):
@@ -62,13 +68,13 @@ def main() -> None:
         begin = i * ROW_STAGGER
         parts.append(
             f'<g clip-path="url(#r{i})" transform="translate(12 {y - CHAR_H + 3:.1f})">'
-            f'<text x="0" y="{CHAR_H - 3:.1f}" xml:space="preserve" fill="{FG}" '
+            f'<text class="fg" x="0" y="{CHAR_H - 3:.1f}" xml:space="preserve" '
             f'textLength="{len(line) * CHAR_W:.1f}">{html.escape(line)}</text></g>'
         )
         # Block cursor riding the wipe edge of this row
         parts.append(
-            f'<rect x="0" y="{y - CHAR_H + 4:.1f}" width="{CHAR_W:.1f}" height="{CHAR_H:.1f}" '
-            f'fill="{FG}" opacity="0">'
+            f'<rect class="fg" x="0" y="{y - CHAR_H + 4:.1f}" width="{CHAR_W:.1f}" height="{CHAR_H:.1f}" '
+            f'opacity="0">'
             f'<set attributeName="opacity" to="0.9" begin="{begin:.2f}s"/>'
             f'<animate attributeName="x" from="12" to="{w - 14}" begin="{begin:.2f}s" '
             f'dur="{ROW_WIPE}s" fill="freeze"/>'

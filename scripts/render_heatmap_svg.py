@@ -10,11 +10,17 @@ Writes contrib-heatmap.svg.
 import datetime as dt
 import json
 
-PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
-BG = "#0d1117"
-BORDER = "#30363d"
-DIM = "#8b949e"
-FG = "#c9d1d9"
+DARK_PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
+LIGHT_PALETTE = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39", "#0f5c2c"]
+
+THEME_CSS = (
+    ".bg{fill:#0d1117}.bd{stroke:#30363d}.dim{fill:#8b949e}.fg{fill:#c9d1d9}"
+    + "".join(f".lvl{i}{{fill:{c}}}" for i, c in enumerate(DARK_PALETTE))
+    + "@media (prefers-color-scheme: light){"
+    + ".bg{fill:#ffffff}.bd{stroke:#d0d7de}.dim{fill:#57606a}.fg{fill:#24292f}"
+    + "".join(f".lvl{i}{{fill:{c}}}" for i, c in enumerate(LIGHT_PALETTE))
+    + "}"
+)
 
 CELL = 13
 GAP = 3
@@ -57,22 +63,26 @@ def main() -> None:
 
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
-        f'font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12">',
+        f'font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" '
+        f'role="img" aria-labelledby="t d">',
+        '<title id="t">Ekta Bhaggi — GitHub contribution heatmap</title>',
+        f'<desc id="d">{data["total"]} contributions in the last year, rendered as a 53-week calendar.</desc>',
         "<style>"
-        ".c{opacity:0;animation:drop .5s ease-out forwards}"
+        + THEME_CSS
+        + ".c{opacity:0;animation:drop .5s ease-out forwards}"
         "@keyframes drop{from{opacity:0;transform:translate(-6px,-6px)}"
         "to{opacity:1;transform:none}}"
         "</style>",
-        f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="8" fill="{BG}" stroke="{BORDER}"/>',
+        f'<rect class="bg bd" x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="8"/>',
     ]
 
     for week, label in month_marks:
         parts.append(
-            f'<text x="{LEFT + week * (CELL + GAP)}" y="24" fill="{DIM}">{label}</text>'
+            f'<text class="dim" x="{LEFT + week * (CELL + GAP)}" y="24">{label}</text>'
         )
     for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         parts.append(
-            f'<text x="10" y="{TOP + row * (CELL + GAP) + CELL - 2}" fill="{DIM}">{label}</text>'
+            f'<text class="dim" x="10" y="{TOP + row * (CELL + GAP) + CELL - 2}">{label}</text>'
         )
 
     for week, row, lvl in cells:
@@ -80,8 +90,8 @@ def main() -> None:
         y = TOP + row * (CELL + GAP)
         delay = (week + row) * STEP
         parts.append(
-            f'<rect class="c" style="animation-delay:{delay:.3f}s" x="{x}" y="{y}" '
-            f'width="{CELL}" height="{CELL}" rx="3" fill="{PALETTE[lvl]}"/>'
+            f'<rect class="c lvl{lvl}" style="animation-delay:{delay:.3f}s" x="{x}" y="{y}" '
+            f'width="{CELL}" height="{CELL}" rx="3"/>'
         )
 
     # footer: stats left, Less→More legend right
@@ -90,15 +100,15 @@ def main() -> None:
     stats = f'{data["total"]:,} contributions in the last year'
     if streak > 1:
         stats += f" · {streak}-day streak"
-    parts.append(f'<text x="{LEFT}" y="{fy}" fill="{FG}">{stats}</text>')
+    parts.append(f'<text class="fg" x="{LEFT}" y="{fy}">{stats}</text>')
     lx = w - 14 - 5 * (CELL + GAP) - 78
-    parts.append(f'<text x="{lx - 40}" y="{fy}" fill="{DIM}">Less</text>')
+    parts.append(f'<text class="dim" x="{lx - 40}" y="{fy}">Less</text>')
     for i in range(5):
         parts.append(
-            f'<rect x="{lx + i * (CELL + GAP)}" y="{fy - CELL + 2}" width="{CELL}" '
-            f'height="{CELL}" rx="3" fill="{PALETTE[i]}"/>'
+            f'<rect class="lvl{i}" x="{lx + i * (CELL + GAP)}" y="{fy - CELL + 2}" width="{CELL}" '
+            f'height="{CELL}" rx="3"/>'
         )
-    parts.append(f'<text x="{lx + 5 * (CELL + GAP) + 6}" y="{fy}" fill="{DIM}">More</text>')
+    parts.append(f'<text class="dim" x="{lx + 5 * (CELL + GAP) + 6}" y="{fy}">More</text>')
     parts.append("</svg>")
 
     with open("contrib-heatmap.svg", "w") as f:
