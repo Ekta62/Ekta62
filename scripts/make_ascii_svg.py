@@ -20,10 +20,7 @@ CHAR_H = 12.6
 ROW_WIPE = 0.55  # seconds each row takes to print
 ROW_STAGGER = 0.075  # delay between row starts
 
-THEME_CSS = (
-    ".bg{fill:#0d1117}.fg{fill:#c9d1d9}"
-    "@media (prefers-color-scheme: light){.bg{fill:#ffffff}.fg{fill:#24292f}}"
-)
+THEME_CSS = ".bg{fill:#0d1117}.fg{fill:#c9d1d9}"
 
 
 def main() -> None:

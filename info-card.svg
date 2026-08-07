@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="498" viewBox="0 0 560 498" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" role="img" aria-labelledby="t d">
 <title id="t">Ekta Bhaggi — GitHub info card</title>
 <desc id="d">Terminal-style card: role, teaching, research, certifications, and contact.</desc>
-<style>.bg{fill:#0d1117}.bd{stroke:#30363d}.key{fill:#39d353}.val{fill:#c9d1d9}.dim{fill:#8b949e}.accent{fill:#e0607e}@media (prefers-color-scheme: light){.bg{fill:#ffffff}.bd{stroke:#d0d7de}.key{fill:#1a7f37}.val{fill:#24292f}.dim{fill:#57606a}.accent{fill:#9d174d}}.ln{opacity:0;animation:in 24s ease-out infinite}@keyframes in{0%{opacity:0;transform:translateX(-8px)}2%{opacity:1;transform:none}90%{opacity:1;transform:none}92%,100%{opacity:0;transform:translateX(-8px)}}</style>
+<style>.bg{fill:#0d1117}.bd{stroke:#30363d}.key{fill:#39d353}.val{fill:#c9d1d9}.dim{fill:#8b949e}.accent{fill:#e0607e}.ln{opacity:0;animation:in 24s ease-out infinite}@keyframes in{0%{opacity:0;transform:translateX(-8px)}2%{opacity:1;transform:none}90%{opacity:1;transform:none}92%,100%{opacity:0;transform:translateX(-8px)}}</style>
 <rect class="bg bd" x="0.5" y="0.5" width="559" height="497" rx="8"/>
 <circle cx="22" cy="21" r="6" fill="#ff5f57"/><circle cx="42" cy="21" r="6" fill="#febc2e"/><circle cx="62" cy="21" r="6" fill="#28c840"/>
 <text class="dim" x="280" y="26" text-anchor="middle">ekta@github</text>

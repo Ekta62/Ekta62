@@ -11,15 +11,10 @@ import datetime as dt
 import json
 
 DARK_PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
-LIGHT_PALETTE = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39", "#0f5c2c"]
 
 THEME_CSS = (
     ".bg{fill:#0d1117}.bd{stroke:#30363d}.dim{fill:#8b949e}.fg{fill:#c9d1d9}"
     + "".join(f".lvl{i}{{fill:{c}}}" for i, c in enumerate(DARK_PALETTE))
-    + "@media (prefers-color-scheme: light){"
-    + ".bg{fill:#ffffff}.bd{stroke:#d0d7de}.dim{fill:#57606a}.fg{fill:#24292f}"
-    + "".join(f".lvl{i}{{fill:{c}}}" for i, c in enumerate(LIGHT_PALETTE))
-    + "}"
 )
 
 CELL = 13

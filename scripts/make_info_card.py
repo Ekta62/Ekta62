@@ -14,7 +14,6 @@ import html
 import os
 
 DARK = dict(bg="#0d1117", border="#30363d", key="#39d353", val="#c9d1d9", dim="#8b949e", accent="#e0607e")
-LIGHT = dict(bg="#ffffff", border="#d0d7de", key="#1a7f37", val="#24292f", dim="#57606a", accent="#9d174d")
 
 W = 560
 LINE_H = 27
@@ -43,13 +42,12 @@ PALETTE = ["#ff7b72", "#ffa657", "#d29922", "#39d353", "#58a6ff", "#bc8cff", "#f
 
 
 def theme_css() -> str:
-    def block(c: dict) -> str:
-        return (
-            f".bg{{fill:{c['bg']}}}.bd{{stroke:{c['border']}}}"
-            f".key{{fill:{c['key']}}}.val{{fill:{c['val']}}}"
-            f".dim{{fill:{c['dim']}}}.accent{{fill:{c['accent']}}}"
-        )
-    return block(DARK) + f"@media (prefers-color-scheme: light){{{block(LIGHT)}}}"
+    c = DARK
+    return (
+        f".bg{{fill:{c['bg']}}}.bd{{stroke:{c['border']}}}"
+        f".key{{fill:{c['key']}}}.val{{fill:{c['val']}}}"
+        f".dim{{fill:{c['dim']}}}.accent{{fill:{c['accent']}}}"
+    )
 
 
 def main() -> None:

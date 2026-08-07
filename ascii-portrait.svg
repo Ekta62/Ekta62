@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="744" height="692" viewBox="0 0 744 692" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" role="img" aria-labelledby="t d">
 <title id="t">Ekta Bhaggi — ASCII portrait</title>
 <desc id="d">Self-typing ASCII-art rendering of a portrait photo.</desc>
-<style>.bg{fill:#0d1117}.fg{fill:#c9d1d9}@media (prefers-color-scheme: light){.bg{fill:#ffffff}.fg{fill:#24292f}}</style>
+<style>.bg{fill:#0d1117}.fg{fill:#c9d1d9}</style>
 <rect class="bg" width="744" height="692" rx="8"/>
 <defs>
 <clipPath id="r0"><rect x="0" y="0" width="0" height="14.6"><animate attributeName="width" from="0" to="744" begin="0.00s" dur="0.55s" fill="freeze"/></rect></clipPath>
