@@ -1,21 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="908" height="196" viewBox="0 0 908 196" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" role="img" aria-labelledby="t d">
 <title id="t">Ekta Bhaggi — GitHub contribution heatmap</title>
-<desc id="d">20 contributions in the last year, rendered as a 53-week calendar.</desc>
+<desc id="d">21 contributions in the last year, rendered as a 53-week calendar.</desc>
 <style>.bg{fill:#0d1117}.bd{stroke:#30363d}.dim{fill:#8b949e}.fg{fill:#c9d1d9}.lvl0{fill:#161b22}.lvl1{fill:#0e4429}.lvl2{fill:#006d32}.lvl3{fill:#26a641}.lvl4{fill:#39d353}.lvl5{fill:#69f0a0}.c{opacity:0;animation:drop .5s ease-out forwards}@keyframes drop{from{opacity:0;transform:translate(-6px,-6px)}to{opacity:1;transform:none}}</style>
 <rect class="bg bd" x="0.5" y="0.5" width="907" height="195" rx="8"/>
-<text class="dim" x="46" y="24">Aug</text>
-<text class="dim" x="110" y="24">Sep</text>
-<text class="dim" x="174" y="24">Oct</text>
-<text class="dim" x="238" y="24">Nov</text>
-<text class="dim" x="318" y="24">Dec</text>
-<text class="dim" x="382" y="24">Jan</text>
-<text class="dim" x="462" y="24">Feb</text>
-<text class="dim" x="526" y="24">Mar</text>
-<text class="dim" x="590" y="24">Apr</text>
-<text class="dim" x="654" y="24">May</text>
-<text class="dim" x="734" y="24">Jun</text>
-<text class="dim" x="798" y="24">Jul</text>
-<text class="dim" x="862" y="24">Aug</text>
+<text class="dim" x="94" y="24">Sep</text>
+<text class="dim" x="158" y="24">Oct</text>
+<text class="dim" x="222" y="24">Nov</text>
+<text class="dim" x="302" y="24">Dec</text>
+<text class="dim" x="366" y="24">Jan</text>
+<text class="dim" x="446" y="24">Feb</text>
+<text class="dim" x="510" y="24">Mar</text>
+<text class="dim" x="574" y="24">Apr</text>
+<text class="dim" x="638" y="24">May</text>
+<text class="dim" x="718" y="24">Jun</text>
+<text class="dim" x="782" y="24">Jul</text>
+<text class="dim" x="846" y="24">Aug</text>
 <text class="dim" x="10" y="65">Mon</text>
 <text class="dim" x="10" y="97">Wed</text>
 <text class="dim" x="10" y="129">Fri</text>
@@ -174,43 +173,43 @@
 <rect class="c lvl0" style="animation-delay:0.286s" x="382" y="118" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.297s" x="382" y="134" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.242s" x="398" y="38" width="13" height="13" rx="3"/>
-<rect class="c lvl0" style="animation-delay:0.253s" x="398" y="54" width="13" height="13" rx="3"/>
+<rect class="c lvl5" style="animation-delay:0.253s" x="398" y="54" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.264s" x="398" y="70" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.275s" x="398" y="86" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.286s" x="398" y="102" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.297s" x="398" y="118" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.308s" x="398" y="134" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.253s" x="414" y="38" width="13" height="13" rx="3"/>
-<rect class="c lvl5" style="animation-delay:0.264s" x="414" y="54" width="13" height="13" rx="3"/>
+<rect class="c lvl3" style="animation-delay:0.264s" x="414" y="54" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.275s" x="414" y="70" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.286s" x="414" y="86" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.297s" x="414" y="102" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.308s" x="414" y="118" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.319s" x="414" y="134" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.264s" x="430" y="38" width="13" height="13" rx="3"/>
-<rect class="c lvl3" style="animation-delay:0.275s" x="430" y="54" width="13" height="13" rx="3"/>
+<rect class="c lvl0" style="animation-delay:0.275s" x="430" y="54" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.286s" x="430" y="70" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.297s" x="430" y="86" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.308s" x="430" y="102" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.319s" x="430" y="118" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.330s" x="430" y="134" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.275s" x="446" y="38" width="13" height="13" rx="3"/>
-<rect class="c lvl0" style="animation-delay:0.286s" x="446" y="54" width="13" height="13" rx="3"/>
+<rect class="c lvl2" style="animation-delay:0.286s" x="446" y="54" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.297s" x="446" y="70" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.308s" x="446" y="86" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.319s" x="446" y="102" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.330s" x="446" y="118" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.341s" x="446" y="134" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.286s" x="462" y="38" width="13" height="13" rx="3"/>
-<rect class="c lvl2" style="animation-delay:0.297s" x="462" y="54" width="13" height="13" rx="3"/>
-<rect class="c lvl0" style="animation-delay:0.308s" x="462" y="70" width="13" height="13" rx="3"/>
+<rect class="c lvl0" style="animation-delay:0.297s" x="462" y="54" width="13" height="13" rx="3"/>
+<rect class="c lvl2" style="animation-delay:0.308s" x="462" y="70" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.319s" x="462" y="86" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.330s" x="462" y="102" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.341s" x="462" y="118" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.352s" x="462" y="134" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.297s" x="478" y="38" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.308s" x="478" y="54" width="13" height="13" rx="3"/>
-<rect class="c lvl2" style="animation-delay:0.319s" x="478" y="70" width="13" height="13" rx="3"/>
+<rect class="c lvl0" style="animation-delay:0.319s" x="478" y="70" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.330s" x="478" y="86" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.341s" x="478" y="102" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.352s" x="478" y="118" width="13" height="13" rx="3"/>
@@ -381,16 +380,10 @@
 <rect class="c lvl0" style="animation-delay:0.583s" x="862" y="70" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.594s" x="862" y="86" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.605s" x="862" y="102" width="13" height="13" rx="3"/>
-<rect class="c lvl0" style="animation-delay:0.616s" x="862" y="118" width="13" height="13" rx="3"/>
-<rect class="c lvl0" style="animation-delay:0.627s" x="862" y="134" width="13" height="13" rx="3"/>
+<rect class="c lvl5" style="animation-delay:0.616s" x="862" y="118" width="13" height="13" rx="3"/>
+<rect class="c lvl3" style="animation-delay:0.627s" x="862" y="134" width="13" height="13" rx="3"/>
 <rect class="c lvl0" style="animation-delay:0.572s" x="878" y="38" width="13" height="13" rx="3"/>
-<rect class="c lvl0" style="animation-delay:0.583s" x="878" y="54" width="13" height="13" rx="3"/>
-<rect class="c lvl0" style="animation-delay:0.594s" x="878" y="70" width="13" height="13" rx="3"/>
-<rect class="c lvl0" style="animation-delay:0.605s" x="878" y="86" width="13" height="13" rx="3"/>
-<rect class="c lvl0" style="animation-delay:0.616s" x="878" y="102" width="13" height="13" rx="3"/>
-<rect class="c lvl5" style="animation-delay:0.627s" x="878" y="118" width="13" height="13" rx="3"/>
-<rect class="c lvl2" style="animation-delay:0.638s" x="878" y="134" width="13" height="13" rx="3"/>
-<text class="fg" x="46" y="180">20 contributions in the last year · 2-day streak</text>
+<text class="fg" x="46" y="180">21 contributions in the last year · 2-day streak</text>
 <text class="dim" x="696" y="180">Less</text>
 <rect class="lvl0" x="736" y="169" width="13" height="13" rx="3"/>
 <rect class="lvl1" x="752" y="169" width="13" height="13" rx="3"/>
