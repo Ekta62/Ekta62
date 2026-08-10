@@ -1,13 +1,13 @@
 {
  "username": "Ekta62",
- "fetched_at": "2026-08-09T07:18:36+00:00",
- "total": 21,
+ "fetched_at": "2026-08-10T08:06:07+00:00",
+ "total": 22,
  "best_day": {
   "date": "2026-01-12",
   "count": 6
  },
- "current_streak": 2,
- "longest_streak": 2,
+ "current_streak": 3,
+ "longest_streak": 3,
  "monthly": {
   "2025-08": 0,
   "2025-09": 0,
@@ -21,7 +21,7 @@
   "2026-05": 0,
   "2026-06": 0,
   "2026-07": 0,
-  "2026-08": 8
+  "2026-08": 9
  },
  "days": [
   {
@@ -1846,6 +1846,11 @@
   },
   {
    "date": "2026-08-09",
+   "count": 1,
+   "level": 1
+  },
+  {
+   "date": "2026-08-10",
    "count": 0,
    "level": 0
   }
